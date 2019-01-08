@@ -1,0 +1,35 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "description": "Project frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Aleman <lnrd256@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.3"
+  },
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

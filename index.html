@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4em 8em 1fr 4em;
+    grid-gap: 1em;
+}
+aside{
+    background: palevioletred;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+footer{
+    background: aqua;
+    grid-row: 4;
+    grid-column: 1 / span 12;
+}
+main{
+    background: orange;
+    grid-row: 3;
+    grid-column: span 9;
+}
+header{
+    background: purple;
+    grid-column: 1 / span 12;
+    grid-row: 1;
+}
+.feature{
+    background: antiquewhite;
+    grid-column: span 4;
+}
+.grid{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+</style>
+<body>
+    <aside class="grid">Aside</aside>
+    <footer class="grid">Footer</footer>
+    <main class="grid">Main</main>
+    <div class="feature grid">Feature 1</div>
+    <div class="feature grid">Feature 2</div>
+    <div class="feature grid">Feature 3</div>
+    <header class="grid">Header</header>
+
+</body>
+</html>
