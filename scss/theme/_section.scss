@@ -1,0 +1,35 @@
+.section-center{
+    &__title{
+        span{
+            color: $primary-color;
+        }
+    }
+}
+.section-images{
+    padding: 1em 1em;
+    &__img{
+        display: block;
+    }
+    &__footer{
+        position: relative;
+    }
+    &__content{
+        background: $primary-color;
+        display: block;
+        padding: 0.5em .5em;
+        margin: 0;
+        width: 65%;
+        color: #fff; 
+    }
+    &__icon{
+        $size: 2em;
+        width: 2*$size;
+        height: 1.74*$size;
+        background: $secondary-color;
+        position: absolute;
+        left: 60%;
+        bottom: 0;
+        clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    }
+
+}

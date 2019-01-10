@@ -1,0 +1,28 @@
+
+//paleta de colores
+$primary-color: hsl(21,94,48);
+$secondary-color: hsl(23,12,13);
+
+//tamaños de fuentes
+$xl: 24px;
+$l: 20px;
+$m: 16px;
+$s: 13px;
+
+//
+$gutter: 16px;
+$max-width: 1200px;
+// z-index
+
+$z-normal: 1;
+$z-widget: 100;
+$z-modal: 1000;
+@import "base/base";
+@import "base/normalize";
+@import "layouts/layout";
+@import "theme/_header";
+@import "theme/menu";
+@import "theme/banner";
+@import "theme/section";
+@import "modules/modules";
+

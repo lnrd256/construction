@@ -1,0 +1,47 @@
+.main-container{
+    width:100%;
+    max-width: $max-width;
+    margin:auto;
+}
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    
+    &-1{
+        width:100%;
+        @media screen and (min-width: 640px){
+            width: 20%;
+        }
+    }
+    &-2{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: flex-end;
+        
+        @media screen and (max-width: 640px){
+            display: none;
+        }
+    }
+    .donate{
+        display: none;
+        @media screen and (min-width:760px){
+            display: block;
+        }
+    }
+}
+
+.section-center{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.card-section{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (min-width: 640px){
+            flex-wrap: nowrap;
+        }
+}

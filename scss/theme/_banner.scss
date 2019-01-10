@@ -1,0 +1,67 @@
+.main-banner{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to left,
+            $primary-color,
+            $secondary-color
+        );
+        opacity: 0.4;
+
+    }
+    &__data{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 75%;
+        @media screen and (min-width: 760px){
+            justify-content: flex-start;
+            left: 40%;
+            width: 50%;
+        }
+    }
+
+    &__subtitle, &__description{
+        display: none;
+        width: 100%;
+        @media screen and (min-width: 760px){
+            display: block;
+            color: #fff;
+        }
+    }
+    &__subtitle{
+        font-size: $m;
+        margin: 0;
+        &:after{
+            content: '';
+            display: block;
+            width: 20%;
+            height: 2px;
+            background: $primary-color; 
+
+        }
+    }
+    &__title{
+        margin: 0 0 0.5em;
+        width: 100%;
+        text-align: center;
+        color: $primary-color;
+        @media screen and (min-width: 760px){
+            text-align: start;
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+    }
+}

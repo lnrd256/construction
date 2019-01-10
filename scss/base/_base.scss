@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: $s;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+img{
+    max-width: 100%;
+}

@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://file.myfontastic.com/XwQhPyRKcymh8WVVmyGmmm/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title>Document</title>
 </head>
-<style>
-body{
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4em 8em 1fr 4em;
-    grid-gap: 1em;
-}
-aside{
-    background: palevioletred;
-    grid-column: 1 / span 3;
-    grid-row: 3;
-}
-footer{
-    background: aqua;
-    grid-row: 4;
-    grid-column: 1 / span 12;
-}
-main{
-    background: orange;
-    grid-row: 3;
-    grid-column: span 9;
-}
-header{
-    background: purple;
-    grid-column: 1 / span 12;
-    grid-row: 1;
-}
-.feature{
-    background: antiquewhite;
-    grid-column: span 4;
-}
-.grid{
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-}
-</style>
-<body>
-    <aside class="grid">Aside</aside>
-    <footer class="grid">Footer</footer>
-    <main class="grid">Main</main>
-    <div class="feature grid">Feature 1</div>
-    <div class="feature grid">Feature 2</div>
-    <div class="feature grid">Feature 3</div>
-    <header class="grid">Header</header>
 
+<body>
+    <!--Header-->
+    <header class="main-header main-container">
+        <div class="main-header-1">
+            <img class="logo" src="http://theme.createuiux.com/html-template/Kanay/images/logo/1.png" class="logo"></img>
+        </div>
+        <div class="main-header-2">
+            <!-- contact widget -->
+            <div class="contact-widget">
+                <div class="contact-widget__icon icon-phone button button--dark button--sqare"></div>
+                <div class="contact-widget__data">
+                    <h3 class="contact-widget__title">Call now</h3>
+                    <p class="contact-widget__content">987 654-321</p>
+                </div>
+            </div>
+            <!-- end contact widget -->
+            <!-- contact widget -->
+            <div class="contact-widget">
+                <div class="contact-widget__icon icon-location button button--dark button--sqare"></div>
+                <div class="contact-widget__data">
+                    <h3 class="contact-widget__title">Our loation</h3>
+                    <p class="contact-widget__content">Avenida siempreviva 432</p>
+                </div>
+            </div>
+            <!-- end contact widget -->
+            <a href="#" class="donate button button--dark">Donate now</a>
+        </div>
+
+
+    </header>
+    <!--end Header-->
+    <div id="toggle-menu" class="icon-bars toggle-menu"></div>
+    <nav id="nav" class="main-nav">
+        <ul class="main-menu">
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Home</a> </li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">About Us</a> </li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Galery</a> </li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Events</a> </li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a> </li>
+        </ul>
+        <div class="social-networks">
+            <a class="icon-facebook" href="https://facebook.com"></a>
+            <a class="icon-twitter" href="https://twitter.com"></a>
+            <a class="icon-youtube" href="https://youtube.com"></a>
+            <a class="icon-linkedin" href="https://linkedin.com"></a>
+        </div>
+    </nav>
+    <div class="main-banner">
+        <img src="img/banner.jpg" alt="" class="main-banner__img">
+        <div class="main-banner__data">
+            <h2 class="main-banner__title">Go Green</h2>
+            <p class="main-banner__subtitle">Save the world by plating trees</p>
+            <p class="main-banner__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                consequatur iusto ipsa. Suscipit </p>
+            <a href="#" class="main-banner__button button button--light">Join now</a>
+            <a href="#" class="main-banner__button button button--cta">Donate now</a>
+        </div>
+    </div>
+    <section class="section">
+        <div class="section-center">
+            <h2 class="section-center__title"><span>20000 +</span> People Working With Us</h2>
+            <p>For over 35 years plans</p>
+        </div>
+        <div class="card-section">
+            <div class="section-images">
+                <img class="section-images__img" src="https://images.pexels.com/photos/1537008/pexels-photo-1537008.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="planes">
+                <div class="section-images__footer">
+                    <p class="section-images__content">Title of the image</p>
+                    <div class="section-images__icon"></div>
+                </div>
+            </div>
+            <div class="section-images">
+                <img class="section-images__img" src="https://images.pexels.com/photos/1537008/pexels-photo-1537008.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="planes">
+                <div class="section-images__footer">
+                    <p class="section-images__content">Title of the image</p>
+                    <div class="section-images__icon"></div>
+                </div>
+            </div>
+            <div class="section-images">
+                    <img class="section-images__img" src="https://images.pexels.com/photos/1537008/pexels-photo-1537008.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="planes">
+                    <div class="section-images__footer">
+                        <p class="section-images__content">Title of the image</p>
+                        <div class="section-images__icon"></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
