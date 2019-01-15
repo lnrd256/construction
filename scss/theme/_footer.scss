@@ -1,0 +1,32 @@
+.logo-footer{
+    width: 100%;
+}
+.footer{
+   
+}
+.footer{
+    background: $secondary-color;
+    font-size: $m;
+    color: #fff;
+    &-widget{
+        &__logo{
+            width: 100px;
+        }
+        &__company ul, &__services ul{
+            list-style: none;
+            padding: 0 1rem;
+            & li a{
+                text-decoration: none;
+                color: $primary-color;
+
+            }
+        }
+        &__about, &__company, &__services, &__subscribe{
+            & h2{
+                margin: 0;
+            }
+            padding:0.5em;
+        }
+    }
+
+}

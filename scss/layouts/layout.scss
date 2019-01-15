@@ -45,3 +45,58 @@
             flex-wrap: nowrap;
         }
 }
+.section-background{
+    &__content{
+        padding: 1.5rem 0;
+        @media screen and (min-width: 640px){
+            padding: 5rem;
+        }
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (min-width: 640px){
+            flex-wrap: nowrap;
+        }
+        &__content{
+            margin: 1em auto;
+            
+            @media screen and (min-width: 640px){
+                margin: 1em ;
+                padding: 5rem;
+            }
+        }
+    }
+}
+.p-2{
+    padding: 3rem!important;
+}
+.footer{
+    padding: 3rem;
+    &-widget{
+        &__about{
+            grid-area: about;
+        }
+        &__company{
+            grid-area: company;
+        }
+        &__services{
+            grid-area: services;
+        }
+        &__subscribe{
+            grid-area: subscribe;
+        }
+    }
+    @media screen and(min-width: 640px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "about company services subscribe";
+    }
+
+    @media screen and (min-width: 760px){
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-areas: 
+            "about company services subscribe";
+    }
+}
